@@ -1,0 +1,99 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+header{
+	background-color: #E8CEBD;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	padding: 50px 0; <!--aqui aumenta a barra do header ou diminui-->
+	align-items: center;
+}
+
+
+footer{
+	background-color: #E8CEBD;
+	padding: 50px 0;
+}
+
+.logo{
+	position: absolute;
+	left: 20;
+	transform: translateY(-3px);
+}
+
+.botoes li {
+	display: inline-block;
+	font-size: 20px;
+	margin: 0 10px;
+}
+
+.container_botoes{
+	text-align: left;
+	position: absolute;
+	left: 200;
+}
+
+.botoes-decoracao{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #634F48;
+	border-radius: 15px;
+	padding: 10px 15px; <!-- aumento ainda mais a distancia dos botoes -->
+}
+
+.botoes li a:hover{
+	background-color: rgba(100, 100, 100, 0.8);
+}
+
+.pesquisa{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 18px;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+.btn-pesquisa{
+   width: 20px;
+   height: 2px;
+   background-color: #634F48;
+   transition: all 0.2s ease-out;
+}
+
+.pesquisa:hover .btn-pesquisa{
+   background-color: #999;
+}
+
+.container-pesquisa{
+	display: flex;
+	justify-content: center;
+	margin-right: 570px;
+	margin-top: 3px;
+}
+
+.carta{
+	width: 30px;
+	height: 30px;
+}
+
+.carta-container{
+	text-align: right;
+	transform: translateY(30px);
+	margin-right: 30px;
+
+}
+
+.coracao{
+	width:30px;
+	height: 30px;
+}
+
+.carrinho{
+	width: 30px;
+	height: 30px;
+}
