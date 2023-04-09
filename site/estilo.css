@@ -54,7 +54,162 @@ footer{
    justify-content: space-around;
    height: 18px;
    background-color: transparent;
+   border: none;*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+header{
+	background-color: #E8CEBD;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	padding: 50px 0; <!--aqui aumenta a barra do header ou diminui-->
+	align-items: center;
+}
+
+
+footer{
+	background-color: #E8CEBD;
+	padding: 50px 0;
+}
+
+.logo{
+	position: absolute;
+	left: 20;
+	transform: translateY(-3px);
+}
+
+.botoes li {
+	display: inline-block;
+	font-size: 20px;
+	margin: 0 10px;
+}
+
+.container_botoes{
+	text-align: left;
+	position: absolute;
+	left: 200;
+}
+
+.botoes-decoracao{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #634F48;
+	border-radius: 15px;
+	padding: 10px 15px; <!-- aumento ainda mais a distancia dos botoes -->
+}
+
+.botoes li a:hover{
+	background-color: rgba(100, 100, 100, 0.8);
+}
+
+
+.pesquisa{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 18px;
+   background-color: transparent;
    border: none;
+   cursor: pointer;
+}
+
+.btn-pesquisa{
+   width: 20px;
+   height: 2px;
+   background-color: #634F48;
+   transition: all 0.2s ease-out;
+   transform: translateY(-12px);
+}
+
+.pesquisa:hover .btn-pesquisa{
+   background-color: #999;
+}
+
+.container-pesquisa{
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	margin-right: 570px;
+	margin-top: 3px;
+	transform: translateY(-8px)
+}
+
+.carta{
+	width: 30px;
+	height: 30px;
+}
+
+.carta-container{
+	text-align: right;
+	transform: translateY(30px);
+	margin-right: 30px;
+
+}
+
+.coracao{
+	width:30px;
+	height: 30px;
+}
+
+.carrinho{
+	width: 30px;
+	height: 30px;
+}
+
+#botao-login{
+	text-align: right;
+	margin-right: 25px;
+	position:static;
+	background-color: transparent;
+	border:0px;
+	cursor: pointer;
+}
+
+#user{
+	width: 30px;
+	height: 30px;
+}
+
+.janela-login{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 1;
+	left: 1;
+	background-color: #00000080;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+}
+
+.modal{
+	width: 60%;
+	min-width: 450px;
+	min-width: 200px;
+	background-color: #ffffff96;
+	backdrop-filter: blur(10px);
+	padding: 50px;
+	border-radius: 20px;
+}
+
+.janela-login.abrir{
+	display: flex;
+}
+
+.fechar{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 25;
+	height: 25;
+	border-radius: 50%;
+	background-color: rgb(225, 174, 142);
+	border: 0;
+	cursor: pointer;
+}
    cursor: pointer;
 }
 
