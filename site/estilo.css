@@ -176,8 +176,8 @@ footer{
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
-	top: 1;
-	left: 1;
+	top: 0;
+	left: 0;
 	background-color: #00000080;
 	display: none;
 	align-items: center;
@@ -186,13 +186,14 @@ footer{
 }
 
 .modal{
-	width: 60%;
+	width: 40%;
 	min-width: 450px;
 	min-width: 200px;
 	background-color: #ffffff96;
 	backdrop-filter: blur(10px);
 	padding: 50px;
 	border-radius: 20px;
+	text-align: center;
 }
 
 .janela-login.abrir{
@@ -210,8 +211,7 @@ footer{
 	border: 0;
 	cursor: pointer;
 }
-   cursor: pointer;
-}
+   
 
 .btn-pesquisa{
    width: 20px;
@@ -251,4 +251,18 @@ footer{
 .carrinho{
 	width: 30px;
 	height: 30px;
+}
+
+.login-form{
+	text-align: center;
+}
+
+.btn-login{
+	width: 60px;
+	height: 20px;
+	margin-top: 10px;
+	border-radius: 20px;
+	border: 0;
+	background-color: #999;
+	cursor: pointer;
 }
