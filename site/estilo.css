@@ -271,3 +271,7 @@ a:link, a:visited, a:hover, a:active{
 	color: inherit;
 	text-decoration: none;
 }
+
+.carta-container img:hover{
+	transform: scale(1.5);
+}
